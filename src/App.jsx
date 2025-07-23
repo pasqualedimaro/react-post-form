@@ -29,7 +29,18 @@ function App() {
       //chiamata axios 
       axios.post(endpoint, formPost).then((response) => {
         //stampo in console il post creato
-        console.log("post pubblicato", response.data);
+        console.log("post creato", response.data);
+        //bonus alert e tolgo i dati dai form
+        alert("post pubblicato");
+        setFormPost({
+          author:"",
+          title:"",
+          body:"",
+          public:false,
+        })
+
+
+        
       });
 
     }
