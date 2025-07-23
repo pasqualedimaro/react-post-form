@@ -37,11 +37,13 @@ function App() {
           title:"",
           body:"",
           public:false,
-        })
-
-
-        
-      });
+        });
+     })
+     //errore
+     .catch((error) =>{
+      console.error(error);
+      alert("errore, il post non è stato creato")
+     })
 
     }
     return(
