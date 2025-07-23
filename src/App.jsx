@@ -3,12 +3,13 @@ import axios from "axios"
 
 
 function App() {
-
-  return 
-    <>
-    <div>ciao</div>
-    </>
-  
+  //mi creo i campi dei post
+  const [formPost,  setFormPost] = useState ({
+    author: "",
+    title: "",
+    body: "",
+    public: "false"
+  });
 }
 
 export default App
