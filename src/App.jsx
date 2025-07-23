@@ -9,7 +9,7 @@ function App() {
     author: "",
     title: "",
     body: "",
-    public: "false"
+    public: false
   });
   //funzione per i campi del form 
   function handlePost(event) {
