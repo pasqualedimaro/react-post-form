@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from "axios"
-const endpoint = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts"
+const endpoint = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts"; 
 
 
 function App() {
@@ -26,8 +26,13 @@ function App() {
     function savePost(event){
       event.preventDefault();
       console.log("post prova", formPost );
+      //chiamata axios 
+      axios.post(endpoint, formPost).then((response) => {
+        //stampo in console il post creato
+        console.log("post pubblicato", response.data);
+      });
+
     }
-    
     return(
       <>
       <h1> crea nuovo post</h1>
