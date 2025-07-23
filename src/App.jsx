@@ -44,7 +44,7 @@ function App() {
           <label htmlFor="title-element">titolo</label>
           <input type="text" 
           id="title-element"
-          placeholder="nome autore"
+          placeholder="titolo del post"
           value={formPost.title}
           onChange={handlePost}
           name="title"
@@ -57,15 +57,14 @@ function App() {
           placeholder="contenuto"
           value={formPost.body}
           onChange={handlePost}
-          name="title"
+          name="body"
           />
         </div>
         <div>
-          <label htmlFor="title-element">pubblica</label>
+          <label htmlFor="public-element">pubblica</label>
           <input type="checkbox" 
           id="public-element"
           checked={formPost.public}
-          value={formPost.title}
           onChange={handlePost}
           name="public"
           />
