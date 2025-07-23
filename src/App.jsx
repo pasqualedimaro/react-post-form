@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from "axios"
+const endpoint = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       event.preventDefault();
       console.log("post prova", formPost );
     }
+    
     return(
       <>
       <h1> crea nuovo post</h1>
